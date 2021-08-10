@@ -1,0 +1,29 @@
+#app,.el-container{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+#main-container{
+}
+#main-header{
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+#main-aside{
+  position: fixed;
+  background-color: #fff;
+  color: blue;
+  height:100%;
+  text-align: center;
+  line-height: 200px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+
+#main-main{
+  margin-left: 300px;
+}
+#main-footer{
+  background-color: #DCDFE6;
+}
