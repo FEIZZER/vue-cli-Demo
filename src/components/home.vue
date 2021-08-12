@@ -2,7 +2,7 @@
  * @Author: xiao-jie
  * @Date: 2021-08-07 22:30:07
  * @LastEditors: xiao-jie
- * @LastEditTime: 2021-08-10 16:35:35
+ * @LastEditTime: 2021-08-12 16:00:14
  * @Description: 
 -->
 <template>
@@ -73,6 +73,7 @@ export default {
           activedMenu: '/home/users',
       };
   },
+ 
   methods:{
       handleOpen() {
       },
@@ -105,7 +106,6 @@ export default {
       }
   }
 }
-// import '../../static/js/element-container-position'
 </script>
 
 <style scoped>
@@ -114,9 +114,5 @@ export default {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-  }
-  .logout_box{
-  }
-  el-menu{
   }
 </style>

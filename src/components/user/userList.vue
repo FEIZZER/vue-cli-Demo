@@ -2,7 +2,7 @@
  * @Author: xiao-jie
  * @Date: 2021-08-08 22:45:56
  * @LastEditors: xiao-jie
- * @LastEditTime: 2021-08-09 20:07:27
+ * @LastEditTime: 2021-08-12 13:23:59
  * @Description: 
 -->
 <template>
@@ -44,8 +44,7 @@
         </el-table>
         <div style="margin-top: 30px">
           <el-pagination :page-size="queryInfo.pagesize" :pager-count="11" layout="prev, pager, next" :total="result.total"
-                        @current-change="handleCurrentChange"
-                        @pre-click="handlePreClick" @next-click="handleNextClick">
+                        @current-change="handleCurrentChange">
 
           </el-pagination>
         </div>

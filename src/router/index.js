@@ -3,12 +3,14 @@ import Router from 'vue-router'
 import Login from '../components/login.vue'
 import Home from '../components/home.vue'
 import UserList from '../components/user/userList.vue'
+import VuexTest from '../components/vuexTest.vue'
 
 import ArticleEdit from '../components/article/articleEdit.vue'
 Vue.use(Router)
 
 let router = new Router({
   routes: [
+    {path: "/vuexTest", component: VuexTest}, 
     {path:"/login", component: Login,},
     {path:"/", redirect: '/login'},
     {path: '/home', 
@@ -33,6 +35,8 @@ router.beforeEach((to, from, next) => {
   if (to.path.indexOf('/home') == 0) {
     const token = window.sessionStorage.getItem('token')
     if (!token) next('/login')
+    next()
+  } else {
     next()
   }
 })

@@ -3,6 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+
+import Vuex from 'vuex'
+import store from './store/store'
+
 import 'element-ui/lib/theme-chalk/index.css'
 import  Elementui from 'element-ui'
 import axios from 'axios'
@@ -18,6 +24,7 @@ Vue.use(Elementui)
 
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App ,Elementui},
   template: '<App/>'
