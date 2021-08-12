@@ -2,7 +2,7 @@
  * @Author: xiao-jie
  * @Date: 2021-08-07 22:30:07
  * @LastEditors: xiao-jie
- * @LastEditTime: 2021-08-12 16:00:14
+ * @LastEditTime: 2021-08-12 22:16:57
  * @Description: 
 -->
 <template>
@@ -70,10 +70,12 @@ export default {
       return {
           menusList: [], 
           isCollapse: true,
-          activedMenu: '/home/users',
+          activedMenu: '',
       };
   },
- 
+  mouted:{
+      
+  }, 
   methods:{
       handleOpen() {
       },
